@@ -1,0 +1,13 @@
+body { 
+    margin: 0; 
+    padding: 0;
+    font-family: 'Inter', sans-serif; 
+    font-size: 16px;
+    line-height: 1.6;
+    background: linear-gradient(120deg, #1e1e2f, #28293d);
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
