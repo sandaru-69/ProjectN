@@ -1,41 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
+/* General Styles */
 body {
-    background: black;
-    color: #00ff00;
-    font-family: 'VT323', monospace;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f4f4f4;
 }
 
-.hidden {
-    display: none;
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    background: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.puzzle-step {
-    margin-top: 20px;
+nav a {
+    color: white;
+    text-decoration: none;
 }
 
-.draggable {
-    display: inline-block;
-    background: #444;
+/* Hero Section */
+.hero {
+    background: linear-gradient(45deg, #ff6b6b, #6b6bff);
+    color: white;
+    padding: 50px 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#cta-button {
+    padding: 10px 20px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#cta-button:hover {
+    transform: scale(1.1);
+}
+
+/* Fade-in Animation for Sections */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Footer */
+footer {
+    background: #333;
     color: white;
     padding: 10px;
-    margin: 5px;
-    cursor: grab;
+    margin-top: 20px;
 }
 
-#drop-zone {
-    width: 200px;
-    height: 50px;
-    border: 2px dashed #00ff00;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
