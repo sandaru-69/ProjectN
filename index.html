@@ -1,13 +1,44 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <script src="script. js"></script>
-    <link rel="stylesheet" href="style.css"> 
-    <title>Hey Nelly</title>
-  </head>
-  <body>
-    <h1 id="heading"> You might be wondering wtf this is...</h1>
-    <p> At this point I dont really know what this either, still tryna figure it out.. </p>
-    <p> </p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrypt the Glitch</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="glitch-container">
+        <p id="glitch-text">%#@!...---..* I %#!& You ---#@!...%#@</p>
+    </div>
+    
+    <div id="step1" class="puzzle-step">
+        <p>Find the hidden letters and type the missing word:</p>
+        <input type="text" id="input-box" placeholder="Type here...">
+        <button onclick="checkStep1()">Submit</button>
+    </div>
+
+    <div id="step2" class="puzzle-step hidden">
+        <p>Drag the fragments to fix the message:</p>
+        <div id="drag-container">
+            <div class="draggable" draggable="true" id="frag1">You</div>
+            <div class="draggable" draggable="true" id="frag2">I</div>
+            <div class="draggable" draggable="true" id="frag3">Like</div>
+        </div>
+        <div id="drop-zone">Drop here</div>
+    </div>
+
+    <div id="step3" class="puzzle-step hidden">
+        <p>Click the correct sequence to reveal the message:</p>
+        <div id="sequence-buttons">
+            <button class="seq-btn" data-step="1">☠</button>
+            <button class="seq-btn" data-step="2">💻</button>
+            <button class="seq-btn" data-step="3">🔓</button>
+        </div>
+    </div>
+
+    <div id="confession" class="hidden">
+        <h2>I Like You.</h2>
+    </div>
+</body>
 </html>
