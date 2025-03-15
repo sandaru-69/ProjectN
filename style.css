@@ -26,11 +26,11 @@ button {
     border-radius: 5px;
 }
 #yes {
-    background: #4CAF50;
+    background: #085c0b;
     color: white;
 }
 #no {
-    background: #f44336;
+    background: #920e04;
     color: white;
     position: absolute;
 }
