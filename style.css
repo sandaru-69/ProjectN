@@ -1,4 +1,5 @@
-body {
+body 
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +26,8 @@ body {
   animation: zoom 16s alternate infinite; 
 }
 
-@keyframes zoom {
+@keyframes zoom 
+{
     0%{
         transform: scale(1);
     }
@@ -34,16 +36,19 @@ body {
     }
 }
 
-.container {
+.container 
+{
     background: rgb(197, 197, 197);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-.buttons {
+.buttons 
+{
     margin-top: 20px;
 }
-button {
+button 
+{
     padding: 10px 20px;
     margin: 10px;
     font-size: 18px;
@@ -52,15 +57,18 @@ button {
     transition: 0.3s;
     border-radius: 5px;
 }
-#yes {
+#yes 
+{
     background: #085c0b;
     color: white;
 }
-#no {
+#no 
+{
     background: #920e04;
     color: white;
     position: absolute;
 }
-.hidden {
+.hidden 
+{
     display: none;
 }
