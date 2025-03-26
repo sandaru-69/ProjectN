@@ -7,10 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <!-- Lock Screen -->
+    <div class="lock-screen" id="lockScreen">
+        <h2>Enter the Secret Code</h2>
+        <input type="password" id="passcodeInput" placeholder="Enter code">
+        <button id="unlockButton">Unlock</button>
+        <p id="errorMessage" class="hidden">Wrong code! Try again.</p>
+    </div>
+
+    <!-- Main Content (Initially Hidden) -->
+    <div class="container hidden" id="mainContent">
         <h1 id="text">Hey, this is for you...</h1>
         <button id="next">Next</button>
-        <p id="finalMessage" class="hidden"> Will you go out with me? ❤️</p>
+        <p id="finalMessage" class="hidden">Will you go out with me? ❤️</p>
         <div class="buttons hidden">
             <button id="yes">Yes</button>
             <button id="no">No</button>
